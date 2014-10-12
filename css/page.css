@@ -1,0 +1,41 @@
+body {
+  background: url(../images/lvlup-bg.png) center top no-repeat;
+  background-color: #131313;
+  color: #fff;
+}
+a {
+  color: #7074ff;
+}
+ul,
+ol {
+  color: #fff459;
+}
+ul p,
+ol p {
+  color: #fff;
+}
+fieldset {
+  color: #999;
+}
+.breadcrumb {
+  background: transparent;
+}
+.region-content {
+  background: url(../images/80percentbg.png) top left repeat;
+  border-radius: 5px;
+  padding: 10px;
+}
+.front .region-content {
+  background: none;
+  padding: 0;
+  opacity: 1;
+}
+div.styleguide,
+#styleguide-header {
+  background: transparent;
+  border: none;
+}
+#styleguide-header a,
+#styleguide-header li a.active {
+  color: #7074ff;
+}

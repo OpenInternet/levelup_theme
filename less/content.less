@@ -1,0 +1,432 @@
+h1, h2, h3, h4 {
+  font-family: @font-family-rokkit;
+  color: #fff459;;
+}
+h4 {
+  font-size: 24px;
+}
+.main-container {
+  border-top: 8px solid #fff;
+}
+.link-wrap {
+  clear: both;
+  position: relative;
+}
+.resource-link, .link-txt, .link-wrap{
+  color: #fff;
+  float:left;
+  width: 100%;
+  height: 120px;
+}
+.link-txt {
+  font-family: @font-family-rokkit;
+  font-size: 24px;
+  font-weight: 700;
+  position: absolute;
+  top: 0;
+  left: 0;
+  p {
+    line-height: 100%;
+    margin: 0;
+    &.for {
+      font-size:18px;
+      padding-left: 5px;
+    }
+  }
+  &:hover {
+    text-decoration: none;
+    color: #eee;
+    text-shadow: 1px 1px 1px #000;
+  }
+}
+
+.update-this {
+  background-color: yellow;
+  color: #000;
+  padding: 5px;
+}
+.resource-links {
+  
+}
+.yellow-trans {
+  background-color: #fff459;
+  opacity: 0.16;
+  &:hover {
+    -webkit-transition: opacity 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
+  }
+}
+.blue-trans {
+  background-color: #58e6ff;
+  opacity: 0.16;
+  &:hover {
+    -webkit-transition: opacity 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
+  }
+}
+.purple-trans {
+  background-color: #8488ff;
+  opacity: 0.16;
+  &:hover {
+    -webkit-transition: opacity 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
+  }
+}
+.pink-trans {
+  background-color: #ff20a3;
+  opacity: 0.16;
+  &:hover {
+    -webkit-transition: opacity 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
+  }
+}
+
+.trainers {
+  .link-txt {
+    background: url(../images/trainer.png) 10px center no-repeat;
+    padding: 30px 0px 0 90px;
+  }
+}
+.trainings {
+  .link-txt {
+    background: url(../images/trainings.png) 10px center no-repeat;
+    padding: 30px 0px 0 90px;
+  }
+}
+.trainingtrainers {
+  .link-txt {
+    background: url(../images/trainingtrainer.png) 10px center no-repeat;
+    padding: 25px 0px 0 90px;
+  }
+}
+.topics {
+  .link-txt {
+    background: url(../images/security.png) 10px center no-repeat;
+    padding: 25px 0px 0 90px;
+  }
+}
+
+.large-purple {
+  color: #7074ff;
+  font-size: 100px; 
+  font-weight: 700;
+  line-height: 85%;
+  margin: 35px 0 0 0;
+}
+
+.large-yellow {
+  color: #fff459;
+  font-size: 100px; 
+  font-weight: 700; 
+  line-height: 85%;
+  margin: 0;
+}
+
+.resource-dropdown {
+  list-style-type: none;
+  padding: 10px 0 10px 10px;
+  font-size: 20px;
+  font-family: @font-family-rokkit;
+  background: #131313;
+  opacity: 0.8;
+  float: left;
+  width: 100%;
+  margin-bottom: 0;
+}
+
+.resources-for-trainers {
+  a {
+    color: #fff459;
+  }
+}
+
+.resources-for-leading-train {
+  a {
+    color: #25faff;
+  }
+}
+
+.resources-for-trainingtrain {
+  a {
+    color: #7074ff;
+  }
+}
+.resource-topics {
+  a {
+    color: #ff20a3;
+  }
+}
+
+.main-container {
+  position: relative;
+  .region-topics {
+    position: absolute;
+    right: 0px;
+    top: -120px;
+    z-index:300;
+  }
+}
+section#block-levelup-blocks-resource-links {
+  .resource-dropdown {
+    opacity: 1;
+  }
+}
+
+.region-topics {
+  ul.resource-dropdown {
+    display: none;
+  }
+  .small-links {
+    width: 200px;
+  }
+  .black-bg {
+    background-color: #000 !important;
+  }
+}
+
+.small-links {
+  .link-wrap {
+    clear: none;
+    height: 50px;
+    width: 50px;
+  }
+  .link-txt {
+    background-size: 100% auto;
+    background-position: left center;
+    height: 50px;
+    width: 30px;
+    padding: 0;
+    margin-left: 10px;
+    text-indent: -9999px
+  } 
+  .resource-link {
+    height: 50px;
+    width: 50px;
+  }
+}
+
+//Topics Links
+#block-levelup-blocks-resource-links {
+  z-index: 300;
+}
+
+.not-front {
+
+  .resource-dropdown {
+    position: absolute;
+    top: 50px;
+  }
+}
+
+//Scale the content
+
+@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+
+  .large-purple, .large-yellow {
+    font-size: 65px;
+  }
+
+  .link-txt {
+    font-size: 18px;
+  }
+  .region-content {
+    .trainingtrainers .link-txt {
+      padding: 16px 0px 0 115px;
+    }
+  }
+}
+
+.front-text {
+  color: #fffaaf;
+  font-family: @font-family-rokkit;
+  font-size: 22px;
+  line-height: 125%;
+}
+
+.security-topics {
+  color: #ff8d45;
+  font-family: 'Rokkitt', serif;
+  font-size: 24px;
+  float: left;
+  line-height: 125%;
+  ul {
+    list-style-position: inside;
+    padding-left: 0;
+    counter-reset: my-badass-counter;
+
+    li {
+     &:before {
+       float:left;
+       display: inline;
+       content: counter(my-badass-counter, decimal) ". ";
+       counter-increment: my-badass-counter;
+     }
+    }
+  }
+  a {
+    color: #ff8d45;
+    padding: 0 0 0 25px !important;
+    &:hover {
+      background: none !important;
+      color: #7074ff;
+    }
+  }
+  h2 {
+    display:none;
+  }
+}
+
+.popover {
+  background: url(../images/80percentbg.png) top left repeat transparent;
+  color: #7074ff;
+  font-family: 'Rokkitt', serif;
+  font-size: 22px;
+  width: 165px;
+}
+
+.popover.top .arrow:after {
+  border-top-color: transparent;
+}
+
+.node-type-activity, .node-type-topic, .node-type-event, .node-type-adids-element, .node-type-sub-topic {
+  .field-label {
+    font-family: @font-family-rokkit;
+    font-size: 14px;
+    color: #fff459;
+  }
+
+  .group-left {
+    .field-label {
+      font-size: 24px;
+    }
+  }
+
+  .field-items {
+    //padding: 0 10px;
+  }
+  .field-name-field-summary {
+    float: left;
+  }
+}
+.field-name-field-image-caption {
+  width: 100%;
+  border-bottom: 1px solid #fff;
+  border-top: 1px solid #fff;
+  padding: 10px;
+  font-family: georgia, serif;
+  font-size: 80%;
+  margin-bottom: 10px;
+  font-style: italic;
+}
+.purple-block {
+  background-color: rgba(112,116,255,0.2);
+  border-radius: 5px;
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+.region-content {
+  .field {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  table {
+    margin: 20px 0;
+
+    td {
+      padding: 5px;
+    }
+  }
+}
+
+//Collapsibles
+//.region-content {
+//  .field-label {
+//    cursor: pointer;
+//  }
+//}
+
+// Buttons
+.reg-btn {
+  background: #ff8d45;
+  border: 0;
+  color: #000;
+  font-weight: bold;
+}
+
+.reg-btn:hover, .reg-btn:focus {
+  background: #ff8d45;
+}
+
+@media (max-width: @screen-sm-max) {
+  .popover {
+    display: none !important;
+  }
+  .security-topics {
+    margin-top: 20px;
+    h2 {
+      display: block;
+    }
+  }
+  .security-header {
+    display: block;
+  }
+}
+
+@media (max-width: @screen-sm-min) {
+  .front-text {
+    margin-top: 20px;
+  }
+  .navbar-default .navbar-nav {
+    float: right;
+  }
+  .dropdown-menu {
+    background-color: #e7e7e7 !important;
+    color: #555555;
+  }
+}
+
+@media (max-width: @screen-xs-max) {
+
+  .large-purple, .large-yellow {
+    font-size: 36px;
+  }
+  .region-content {
+    .link-txt {
+      height: 90px;
+      font-size: 18px;
+    }
+    .trainers .link-txt {
+      padding: 20px 0px 0 110px;
+    }
+    .trainings .link-txt {
+      padding: 20px 0px 0 110px;
+    }
+    .trainingtrainers .link-txt {
+      padding: 10px 0px 0 110px;
+    }
+  }
+  .link-wrap {
+    height: 90px;
+  }
+  .resource-link {
+    height: 90px;
+  }
+  .navbar-default .navbar-brand {
+    font-size: 55px;
+    padding-right: 53px;
+    padding-top: 22px;
+  }
+  .welcome-wrap {
+    margin-bottom: 5px;
+  }
+  .large-purple {
+    margin-top: 10px;
+  }
+  .region-topics {
+    display: none;
+  }
+}

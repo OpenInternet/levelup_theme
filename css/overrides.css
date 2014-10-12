@@ -1,0 +1,89 @@
+/**
+ * @TODO
+ * Please move these styles to a less stylesheet when ruby is fixed.
+ * Change media queries to use bootstrap vars, i.e.
+ * @media (min-width: @screen-sm-min) and (max-width: @screen-sm-max)
+ */
+.page-links {
+  float: left;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.page-next {
+  float: right;
+}
+.page-previous {
+  float:left;
+}
+.page-up {
+  text-align: center;
+  float:left;
+  margin-top: -60px;
+}
+@media (max-width: 768px) {
+  .page-up {
+    margin-top: 0px;
+    text-align: left;
+  }
+}
+.region-sidebar-second h2.block-title {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+  font-size: 24px !important;
+}
+
+.popover.bottom .arrow:after {
+  border-top-color: transparent;
+}
+.popover {
+  width: auto;
+}
+.resource-links {
+  position: relative;
+}
+.link-popover {
+  color: #fff;
+  font-family: 'Rokkitt', serif;
+  position: absolute;
+  top: -23px;
+  right: 0;
+  width: 300px;
+  text-align: right;
+  text-shadow: 1px, 1px, 1px #000; 
+}
+p.link-popover  {
+ font-size: 20px; 
+}
+#navbar {
+  margin-top: 40px;
+}
+
+#block-menu-block-1 h2 {
+  color: #fff;
+}
+
+.menu-block-1 ul.menu  li a{
+  font-size: 20px;
+  line-height: 125%;
+  padding: 0 !important;
+}
+
+/**
+ * Remove this rule when you add the main nav back.
+ */
+.navbar-toggle {
+  display: none;
+}
+.node-teaser ul.links li a{
+  display: none;
+}
+
+/**
+ * Chris's dirty hacks
+ */
+
+/* Style teaser titles */
+div.field-name-field-resources div.field-items div.field-item div.node-topic h2 a,
+div.field-name-field-resources div.field-items div.field-item div.node-book h2 a,
+div.field-name-field-resources div.field-items div.field-item div.node-basic-resource-page h2 a {
+   color: #fff459;
+}
